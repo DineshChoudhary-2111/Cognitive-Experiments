@@ -1,0 +1,19 @@
+Participant,Session,Condition,Avg Memory Accuracy (%),Avg Recall Time (s),Avg Interference Accuracy (%)
+A,1,control,100.0,5.61,nil
+A,1,interference,87.5,5.64,75.0
+A,2,control,100.0,6.64,nil
+A,2,interference,100.0,6.64,100.0
+A,3,control,100.0,5.84,nil
+A,3,interference,100.0,6.28,70.83
+B,1,control,100.0,2.0,nil
+B,1,interference,100.0,2.2,100.0
+B,2,control,100.0,1.91,nil
+B,2,interference,100.0,2.13,100.0
+B,3,control,100.0,2.26,nil
+B,3,interference,100.0,2.26,100.0
+C,1,control,100.0,5.09,nil
+C,1,interference,75.0,4.38,100.0
+C,2,control,100.0,3.83,nil
+C,2,interference,93.75,4.55,79.17
+C,3,control,100.0,3.92,nil
+C,3,interference,93.75,4.32,93.75

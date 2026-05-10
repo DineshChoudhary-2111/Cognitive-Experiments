@@ -1,0 +1,19 @@
+Participant,Type,Load,Accuracy,Avg_RT,Avg_Confidence,Risk_A,Risk_B,Memory_Accuracy,Memory_RT
+A,intuitive,LOAD,50.0,6.51,5.0,NIL,NIL,100.0,6.38
+A,intuitive,NO LOAD,100.0,7.18,5.0,NIL,NIL,NIL,NIL
+A,analytical,LOAD,50.0,8.42,4.0,NIL,NIL,50.0,6.25
+A,analytical,NO LOAD,100.0,4.41,5.0,NIL,NIL,NIL,NIL
+A,risk,LOAD,NIL,NIL,5.0,1,1,100.0,6.81
+A,risk,NO LOAD,NIL,NIL,5.0,0,2,NIL,NIL
+B,intuitive,LOAD,100.0,2.98,5.0,NIL,NIL,100.0,2.83
+B,intuitive,NO LOAD,100.0,2.18,5.0,NIL,NIL,NIL,NIL
+B,analytical,LOAD,50.0,2.3,5.0,NIL,NIL,100.0,2.78
+B,analytical,NO LOAD,50.0,1.36,5.0,NIL,NIL,NIL,NIL
+B,risk,LOAD,NIL,NIL,5.0,1,1,100.0,2.55
+B,risk,NO LOAD,NIL,NIL,4.5,2,0,NIL,NIL
+C,intuitive,LOAD,100.0,4.84,5.0,NIL,NIL,75.0,5.38
+C,intuitive,NO LOAD,50.0,5.51,4.5,NIL,NIL,NIL,NIL
+C,analytical,LOAD,50.0,9.64,4.5,NIL,NIL,62.5,6.98
+C,analytical,NO LOAD,100.0,4.49,4.5,NIL,NIL,NIL,NIL
+C,risk,LOAD,NIL,NIL,5.0,0,2,100.0,4.38
+C,risk,NO LOAD,NIL,NIL,5.0,2,0,NIL,NIL
