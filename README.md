@@ -20,7 +20,7 @@ Study of how visual distractions and misleading stimuli affect attention, precis
 ###  Decision Making Under Cognitive Load
 Analysis of how memory load affects reasoning accuracy, confidence, and decision behavior.
 
-➡️ [Open Project](./decision-under-load)
+ [Open Project](./decision-under-load)
 
 ---
 
