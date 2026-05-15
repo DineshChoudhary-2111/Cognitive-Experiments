@@ -1,7 +1,7 @@
 # Attention and Distraction Experiment
 
 ## Objective
-To study how visual distractions and misleading signals affect attention, response accuracy, and reaction time.
+To study how visual distractions and misleading stimuli affect selective attention response precision and reaction time during rapid target detection tasks.
 
 ## Variables Measured
 - Detection accuracy
@@ -11,14 +11,14 @@ To study how visual distractions and misleading signals affect attention, respon
 
 ## Methodology
 Participants responded to target stimuli within rapid visual streams.  
-Distraction conditions included visual clutter, shifting layouts, misleading lowercase signals, and burst noise patterns.
+Distraction conditions included visual clutter shifting layouts misleading near target stimuli and burst noise patterns to simulate perceptual interference.
 
 ## Technologies Used
 - Python
 - CSV data logging
 
 ## Observations
-Visual clutter and misleading stimuli increased false positives and reduced detection precision.
+Distraction conditions increased false positives and reduced response precision while overall target detection accuracy remained relatively stable across participants.
 
 ## Future Scope
-Expansion into adaptive distraction systems and larger-scale participant analysis.
+Expansion into adaptive distraction systems larger participant groups and more complex attentional interference conditions.
