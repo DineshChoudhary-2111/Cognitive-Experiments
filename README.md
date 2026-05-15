@@ -1,52 +1,80 @@
 # Cognitive Experiments and Behavioral Systems
 
-A collection of self-driven Python-based experiments exploring cognition, attention, memory, decision making, and behavioral patterns.
+A collection of self-driven Python-based experiments exploring cognition, attention, memory, decision making, and sleep behavior using computational and behavioral data collection methods.
 
 ---
 
-## 📌 Project Navigation
+##  Navigate Projects
 
-Choose an experiment to explore:
-
-### 🧠 Memory Interference Experiment
-Explores how cognitive interference affects short-term memory recall, response time, and recall accuracy.  
-➡️ Open: `Memory_Interference/`
+Click on any experiment below to explore its code, data, and analysis.
 
 ---
 
-### 🎯 Attention and Distraction Experiment
-Studies the effect of visual clutter, misleading stimuli, and distraction on attention, precision, and reaction time.  
-➡️ Open: `Attention_Distraction/`
+###  Attention and Distraction Experiment
+Study of how visual distractions and misleading stimuli affect attention, precision, and reaction time.
+
+ [Open Project](./attention-distraction)
 
 ---
 
-### ⚖️ Decision Making Under Cognitive Load
-Examines how memory load influences reasoning accuracy, confidence, and risk-based decision behavior.  
-➡️ Open: `Decision_Making/`
+###  Decision Making Under Cognitive Load
+Analysis of how memory load affects reasoning accuracy, confidence, and decision behavior.
+
+➡️ [Open Project](./decision-under-load)
 
 ---
 
-### 😴 Sleep and Cognitive Tracking System
-Tracks relationships between sleep habits, mood, focus, reaction time, and memory performance over time.  
-➡️ Open: `Sleep_Tracker/`
+###  Memory Interference Experiment
+Explores how interference impacts short-term memory recall and response accuracy.
+
+ [Open Project](./memory-interference)
 
 ---
 
-## 🧪 Technologies Used
-- Python  
-- CSV-based data logging  
-- Behavioral experiment simulations  
-- Matplotlib for visualization  
+###  Sleep and Cognitive Tracking System
+Tracks relationships between sleep patterns, mood, focus, memory, and reaction time.
+
+ [Open Project](./sleep-tracker)
 
 ---
 
-## 💡 Motivation
-These projects were developed from an interest in cognition, neuroscience, behavioral systems, and computational experimentation. The goal was to model human cognitive behavior using simple programmable experiments.
+##  Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- CSV-based data logging
 
 ---
 
-## 🚀 Future Scope
-- Larger participant datasets  
-- Statistical modeling and inference  
-- Advanced visualization dashboards  
-- Machine learning based cognitive prediction systems  
+##  What This Repository Shows
+This repository demonstrates how cognitive behavior can be modeled and analyzed using simple computational experiments involving memory, attention, decision-making, and sleep tracking.
+
+Each project focuses on:
+- Behavioral data collection
+- Controlled experimental simulation
+- Statistical and visual analysis
+- Cognitive interpretation of results
+
+---
+
+##  Repository Structure
+Each folder contains:
+- Python experiment scripts
+- CSV datasets
+- Graph generation scripts
+- Generated visualizations (`graphs/`)
+- Detailed project reports
+
+---
+
+##  Goal of This Work
+To build computational models of human cognition using lightweight experimental simulations and real-world behavioral data tracking.
+
+---
+
+##  Future Improvements
+- Larger multi-user datasets
+- Statistical significance testing
+- Machine learning prediction models
+- Unified cognitive dashboard system
