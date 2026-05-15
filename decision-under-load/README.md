@@ -1,24 +1,35 @@
 # Decision Making Under Cognitive Load
 
 ## Objective
-To study how memory load influences reasoning accuracy, confidence, and risk-based decision making.
+To study how cognitive load influences reasoning accuracy, confidence, response time, and risk-based decision making.
 
 ## Variables Measured
 - Decision accuracy
+- Response time
 - Confidence levels
-- Recall response time
 - Memory recall accuracy
+- Risk preference patterns
 
 ## Methodology
-Participants answered intuitive, analytical, and risk-based questions under both load and no-load conditions.  
-Load conditions required memorizing and recalling digit sequences during decision tasks.
+Participants completed intuitive, analytical, and risk-based decision tasks under both load and no-load conditions.
+
+Load trials required participants to memorize and later recall digit sequences while simultaneously answering decision-based questions.
+
+The experiment compared how working memory interference affected analytical reasoning, intuitive responses, confidence, and risk selection behavior.
 
 ## Technologies Used
 - Python
 - CSV data logging
+- Randomized trial generation
 
 ## Observations
-Cognitive load affected confidence, response time, and analytical performance more strongly than intuitive decision tasks.
+Cognitive load produced stronger effects on analytical reasoning accuracy and response time compared to intuitive tasks.
+
+Risk preferences also showed variability between load and no-load conditions, suggesting that working memory demand may influence decision strategies.
 
 ## Future Scope
-Analysis with larger participant groups and more complex cognitive load systems.
+Future versions could incorporate:
+- larger participant groups
+- adaptive memory loads
+- statistical significance testing
+- physiological measures such as stress or attention tracking
