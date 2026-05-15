@@ -22,3 +22,7 @@ Distraction conditions increased false positives and reduced response precision 
 
 ## Future Scope
 Expansion into adaptive distraction systems larger participant groups and more complex attentional interference conditions.
+
+##  Report
+View full analysis report here:
+ [Open Report](./report.md)

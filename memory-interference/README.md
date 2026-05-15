@@ -43,3 +43,7 @@ Possible future extensions include:
 - variable sequence lengths
 - multimodal interference conditions
 - statistical analysis of cognitive load patterns
+
+##  Report
+View full analysis report here:
+ [Open Report](./report.md)

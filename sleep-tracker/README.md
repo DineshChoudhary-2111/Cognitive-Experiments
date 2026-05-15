@@ -35,3 +35,7 @@ Higher screen time and longer sleep latency show weaker cognitive performance tr
 - More participants for stronger statistical validity
 - Advanced correlation and regression modeling
 - Sleep stage or wearable integration
+
+##  Report
+View full analysis report here:
+ [Open Report](./report.md)

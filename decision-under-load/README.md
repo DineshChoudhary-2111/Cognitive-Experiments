@@ -34,3 +34,7 @@ Memory recall performance decreased under load conditions, confirming working me
 - Adaptive cognitive load variation  
 - Physiological measurement integration  
 - More complex decision tasks  
+
+##  Report
+View full analysis report here:
+ [Open Report](./report.md)
