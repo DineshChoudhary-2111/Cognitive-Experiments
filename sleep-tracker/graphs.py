@@ -1,15 +1,21 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
-data = pd.read_csv("final_data.csv")
+base_dir = os.path.dirname(__file__)
+csv_path = os.path.join(base_dir, "final_data.csv")
+
+data = pd.read_csv(csv_path)
+
+graphs_dir = os.path.join(base_dir, "graphs")
+os.makedirs(graphs_dir, exist_ok=True)
 
 plt.style.use("seaborn-v0_8")
 
 
-# =====================================================
-# GROUP 1 — SLEEP → COGNITIVE SPEED (REACTION TIME)
-# =====================================================
+# GROUP 1 — SLEEP → REACTION TIME
+
 plt.figure(figsize=(12, 4))
 
 # 1. Sleep Hours vs Reaction Time
@@ -23,10 +29,7 @@ plt.plot(x, m*x + b)
 
 plt.xlabel("Sleep Hours")
 plt.ylabel("Reaction Time (sec)")
-plt.title("1. Sleep Hours → Reaction Speed")
-
-print("Corr (Sleep Hours vs Reaction):", x.corr(y))
-
+plt.title("Sleep Hours → Reaction Time")
 
 # 2. Sleep Quality vs Reaction Time
 plt.subplot(1, 3, 2)
@@ -36,11 +39,8 @@ plt.scatter(x, y)
 m, b = np.polyfit(x, y, 1)
 plt.plot(x, m*x + b)
 
-plt.xlabel("Sleep Quality (1–10)")
-plt.title("2. Sleep Quality → Reaction Speed")
-
-print("Corr (Quality vs Reaction):", x.corr(y))
-
+plt.xlabel("Sleep Quality")
+plt.title("Sleep Quality → Reaction Time")
 
 # 3. Screen Time vs Reaction Time
 plt.subplot(1, 3, 3)
@@ -51,17 +51,17 @@ m, b = np.polyfit(x, y, 1)
 plt.plot(x, m*x + b)
 
 plt.xlabel("Screen Time (min)")
-plt.title("3. Screen Time → Reaction Speed")
-
-print("Corr (Screen vs Reaction):", x.corr(y))
+plt.title("Screen Time → Reaction Time")
 
 plt.tight_layout()
-plt.show()
+
+path1 = os.path.join(graphs_dir, "reaction_time_sleep.png")
+plt.savefig(path1)
+plt.close()
 
 
-# =====================================================
 # GROUP 2 — SLEEP → MEMORY PERFORMANCE
-# =====================================================
+
 plt.figure(figsize=(12, 4))
 
 # 1. Sleep Hours vs Memory
@@ -75,10 +75,7 @@ plt.plot(x, m*x + b)
 
 plt.xlabel("Sleep Hours")
 plt.ylabel("Memory Score (%)")
-plt.title("1. Sleep → Memory Retention")
-
-print("Corr (Sleep Hours vs Memory):", x.corr(y))
-
+plt.title("Sleep → Memory")
 
 # 2. Sleep Quality vs Memory
 plt.subplot(1, 3, 2)
@@ -89,10 +86,7 @@ m, b = np.polyfit(x, y, 1)
 plt.plot(x, m*x + b)
 
 plt.xlabel("Sleep Quality")
-plt.title("2. Quality → Memory")
-
-print("Corr (Quality vs Memory):", x.corr(y))
-
+plt.title("Quality → Memory")
 
 # 3. Sleep Latency vs Memory
 plt.subplot(1, 3, 3)
@@ -103,17 +97,17 @@ m, b = np.polyfit(x, y, 1)
 plt.plot(x, m*x + b)
 
 plt.xlabel("Sleep Latency (min)")
-plt.title("3. Sleep Latency → Memory")
-
-print("Corr (Latency vs Memory):", x.corr(y))
+plt.title("Latency → Memory")
 
 plt.tight_layout()
-plt.show()
+
+path2 = os.path.join(graphs_dir, "memory_sleep.png")
+plt.savefig(path2)
+plt.close()
 
 
-# =====================================================
-# GROUP 3 — MEMORY ↔ REACTION (COGNITIVE LINK)
-# =====================================================
+# GROUP 3 — MEMORY ↔ COGNITIVE STATE
+
 plt.figure(figsize=(12, 4))
 
 # 1. Memory vs Reaction Time
@@ -127,10 +121,7 @@ plt.plot(x, m*x + b)
 
 plt.xlabel("Memory Score")
 plt.ylabel("Reaction Time")
-plt.title("1. Memory ↔ Speed")
-
-print("Corr (Memory vs Reaction):", x.corr(y))
-
+plt.title("Memory ↔ Speed")
 
 # 2. Memory vs Focus
 plt.subplot(1, 3, 2)
@@ -141,10 +132,7 @@ m, b = np.polyfit(x, y2, 1)
 plt.plot(x, m*x + b)
 
 plt.xlabel("Memory Score")
-plt.title("2. Memory ↔ Focus")
-
-print("Corr (Memory vs Focus):", x.corr(y2))
-
+plt.title("Memory ↔ Focus")
 
 # 3. Memory vs Mood
 plt.subplot(1, 3, 3)
@@ -155,20 +143,19 @@ m, b = np.polyfit(x, y3, 1)
 plt.plot(x, m*x + b)
 
 plt.xlabel("Memory Score")
-plt.title("3. Memory ↔ Mood")
-
-print("Corr (Memory vs Mood):", x.corr(y3))
+plt.title("Memory ↔ Mood")
 
 plt.tight_layout()
-plt.show()
+
+path3 = os.path.join(graphs_dir, "memory_cognition.png")
+plt.savefig(path3)
+plt.close()
 
 
-# =====================================================
-# GROUP 4 — OVERALL BRAIN PERFORMANCE MODEL
-# =====================================================
+# GROUP 4 — OVERALL COGNITIVE SCORE MODEL
+
 plt.figure(figsize=(6, 4))
 
-# Sleep Quality vs Combined Cognition (Memory + Reaction avg concept)
 x = data["Sleep Quality"].astype(float)
 y = (data["Memory Score"] + data["Reaction Time Avg"]) / 2
 
@@ -178,8 +165,12 @@ plt.plot(x, m*x + b)
 
 plt.xlabel("Sleep Quality")
 plt.ylabel("Combined Cognitive Score")
-plt.title("1. Sleep → Overall Brain Performance")
+plt.title("Sleep Quality → Overall Performance")
 
-print("Overall Correlation:", x.corr(y))
+path4 = os.path.join(graphs_dir, "overall_cognitive.png")
+plt.savefig(path4)
+plt.close()
 
-plt.show()
+
+print("\nALL GRAPHS GENERATED SUCCESSFULLY")
+print(f"Saved in: {graphs_dir}")
