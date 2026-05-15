@@ -142,17 +142,6 @@ Possible future extensions include:
 
 ---
 
-## Repository Structure
-
-The repository contains:
-- experiment source code
-- graph generation scripts
-- collected datasets
-- generated visualizations
-- project documentation
-
----
-
 ## Conclusion
 
 This project began as an attempt to explore memory under interference conditions but gradually developed into a broader investigation of working memory stability under divided attention.

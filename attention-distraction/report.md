@@ -148,17 +148,6 @@ Possible future extensions include:
 
 ---
 
-## Repository Structure
-
-The repository contains:
-- experiment source code
-- graph generation scripts
-- collected experimental datasets
-- generated visualizations
-- project documentation
-
----
-
 ## Conclusion
 
 This project began as a small attempt to explore how distractions influence attention but gradually developed into a broader investigation of attentional filtering and response behavior under perceptual interference.
