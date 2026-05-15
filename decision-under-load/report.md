@@ -2,13 +2,13 @@
 
 ## Abstract
 
-This project investigates how cognitive load influences human decision-making performance across intuitive reasoning, analytical reasoning, and risk-based decision tasks. A Python-based experimental system was developed to compare decision performance under normal conditions versus conditions involving working memory interference. Participants performed decision-making tasks while simultaneously maintaining digit sequences under load conditions. Experimental data was collected across multiple sessions and analyzed using decision accuracy, response time, confidence levels, risk preference patterns, and memory recall performance metrics.
+This project explores how cognitive load influences decision-making performance, response time, confidence levels, and risk-based choice behavior under structured cognitive tasks. A Python-based experimental system was developed to simulate dual-task conditions where participants performed decision-making tasks while simultaneously engaging in memory retention activities. Experimental data was collected across multiple sessions and analyzed using decision accuracy, response time, confidence ratings, risk preference patterns, and memory recall metrics.
 
 ---
 
 ## Objective
 
-The objective of this experiment was to explore how cognitive load affects decision-making performance under divided attention conditions. Instead of treating decision-making as a purely isolated process, the experiment aimed to observe how working memory interference influences accuracy, response speed, confidence stability, and risk-based behavioral choices.
+The objective of this experiment was to study how working memory load affects decision-making behavior. Instead of measuring only correctness of responses, the experiment aimed to observe how cognitive load influences reasoning accuracy, response speed, confidence stability, and risk-taking patterns.
 
 ---
 
@@ -17,14 +17,12 @@ The objective of this experiment was to explore how cognitive load affects decis
 The experiment consisted of two primary conditions:
 
 ### Control Condition
+Participants performed decision-making tasks (intuitive, analytical, and risk-based) without any memory interference.
 
-Participants performed decision-making tasks (intuitive, analytical, and risk-based) without any additional cognitive load.
+### Load Condition
+Participants performed the same decision tasks while simultaneously memorizing and recalling a 4-digit sequence, introducing working memory interference.
 
-### Interference (Load) Condition
-
-Participants performed the same decision-making tasks while simultaneously memorizing and later recalling a 4-digit sequence. This introduced working memory interference during decision processing.
-
-The order of conditions and tasks was randomized across trials to reduce prediction effects and learning bias.
+The order of conditions and tasks was randomized across trials to reduce adaptation and prediction effects.
 
 ---
 
@@ -33,9 +31,9 @@ The order of conditions and tasks was randomized across trials to reduce predict
 The experiment included:
 - 3 participants
 - 3 sessions per participant
-- multiple randomized trials per session under both conditions
+- multiple trials under both conditions
 
-Repeated sessions were used to improve stability of behavioral trends and reduce one-time variability effects.
+Using repeated sessions helped reduce one-time variability and allowed more stable behavioral observations.
 
 ---
 
@@ -43,24 +41,25 @@ Repeated sessions were used to improve stability of behavioral trends and reduce
 
 The following metrics were recorded:
 
-- Decision Accuracy  
-- Response Time  
-- Confidence Levels (1–5 scale)  
-- Risk Choice Distribution (A vs B)  
-- Memory Recall Accuracy (load condition only)  
-- Memory Recall Time  
-
-These variables were used to evaluate how cognitive load affects both decision quality and underlying cognitive stability.
+- Decision Accuracy
+- Response Time
+- Confidence Levels
+- Risk Choice Distribution (A vs B)
+- Memory Recall Accuracy (Load condition only)
+- Memory Recall Time (Load condition only)
 
 ---
 
 ## Cognitive Basis
 
-This experiment is based on working memory limitation theory and dual-task interference models in cognitive psychology. Cognitive load reduces available mental resources, forcing participants to divide attention between memory retention and decision-making processes.
+This experiment is based on working memory limitation theory and dual-task interference in cognitive psychology. Cognitive load reduces available attentional resources, forcing participants to divide processing between memory retention and decision-making.
 
-The memory task required participants to actively maintain digit sequences while simultaneously performing reasoning tasks, creating a controlled interference condition that simulates real-world multitasking constraints.
+The arithmetic memory task in the load condition was designed to simulate real-world multitasking situations where individuals must retain information while making decisions.
 
-An important aspect of the experiment was analyzing not just correctness, but also how response behavior, confidence, and decision stability change under cognitive strain.
+The study focuses on how different cognitive processes behave under interference:
+- intuitive reasoning (heuristic-based)
+- analytical reasoning (structured computation)
+- risk-based decision making (probabilistic choice)
 
 ---
 
@@ -68,93 +67,80 @@ An important aspect of the experiment was analyzing not just correctness, but al
 
 ### Decision Accuracy Comparison
 
-![Accuracy Graph](graphs/accuracy_comparison.png)
-
-Analytical reasoning showed a noticeable drop in accuracy under load conditions, while intuitive reasoning remained relatively stable. This suggests that structured reasoning is more sensitive to cognitive interference than heuristic-based decision-making.
+![Decision Accuracy](graphs/decision_accuracy_comparison.png)
 
 ---
 
 ### Response Time Comparison
 
-![Response Time Graph](graphs/reaction_time_comparison.png)
-
-Response times increased under load conditions across both intuitive and analytical tasks, indicating higher cognitive processing demands when working memory resources are divided.
+![Response Time](graphs/reaction_time_comparison.png)
 
 ---
 
 ### Confidence Comparison
 
-![Confidence Graph](graphs/confidence_comparison.png)
-
-Confidence levels showed only minor changes under load, suggesting that subjective certainty does not always directly reflect actual performance degradation.
+![Confidence](graphs/confidence_comparison.png)
 
 ---
 
 ### Memory Performance (Load Condition Only)
 
-![Memory Accuracy Graph](graphs/memory_accuracy.png)
+![Memory Accuracy](graphs/memory_accuracy.png)
 
-Memory recall accuracy decreased under load conditions, while recall time increased, confirming the effect of interference on working memory retention and retrieval speed.
+![Memory Recall Time](graphs/memory_recall_time.png)
 
 ---
 
 ### Risk Choice Distribution
 
-![Risk Behavior Graph](graphs/risk_choice_distribution.png)
-
-Risk-based decisions showed variability under load conditions, indicating that cognitive strain influences consistency in probabilistic decision-making.
+![Risk Choices](graphs/risk_choice_distribution.png)
 
 ---
 
 ## Observations and Interpretation
 
-One of the key observations was that analytical reasoning was significantly more affected by cognitive load compared to intuitive reasoning. While participants were still able to complete tasks under interference, their response times increased and accuracy decreased in structured reasoning tasks.
-
-Risk-based decisions showed inconsistent shifts under load, suggesting that cognitive stress can alter decision patterns even in situations with no objectively correct answer.
-
-Memory performance clearly degraded under interference, confirming that working memory resources are shared between retention and decision-making processes.
-
-Another important finding was that confidence levels remained relatively stable despite performance drops, indicating a disconnect between subjective certainty and actual cognitive performance under load.
+Analytical reasoning shows greater sensitivity to cognitive load compared to intuitive reasoning, with noticeable reductions in accuracy and increases in response time.
+Intuitive reasoning remains relatively stable, suggesting reliance on heuristic processing under cognitive strain.
+Risk-based decisions show variability under load conditions, indicating that working memory interference influences decision consistency.
+Memory performance significantly declines under load conditions, confirming the expected effect of working memory interference.
+Confidence levels remain relatively stable, suggesting that subjective confidence does not always reflect actual performance degradation.
 
 ---
 
 ## Limitations
 
-Several limitations were present during the experiment:
-
-- small participant sample size  
-- limited number of sessions  
-- simplified lab simulation compared to real-world cognitive load  
-- absence of physiological measurements  
-- controlled environment not fully reflective of natural decision contexts  
+- Small participant sample size
+- Limited number of trials per condition
+- Simplified experimental environment
+- No physiological measurements
+- Controlled simulation instead of real-world environment
 
 ---
 
 ## Future Scope
 
-Possible future improvements include:
-- larger participant groups  
-- statistical significance testing (ANOVA, t-tests)  
-- adaptive memory load variation  
-- integration of physiological tracking (eye tracking, EEG, heart rate)  
-- machine learning models for predicting decision behavior under load  
+- Larger participant groups
+- Statistical significance testing (t-tests / ANOVA)
+- Adaptive cognitive load variation
+- Integration of physiological tracking (EEG, eye tracking)
+- Machine learning-based prediction of decision behavior
 
 ---
 
 ## Technologies Used
 
-- Python  
-- Pandas  
-- Matplotlib  
-- CSV-based data logging  
-- Randomized experimental design  
+- Python
+- Pandas
+- Matplotlib
+- CSV-based data logging
+- Randomized experimental design
 
 ---
 
 ## Conclusion
 
-This project demonstrates that cognitive load significantly influences human decision-making performance, particularly in analytical reasoning and working memory dependent tasks. While intuitive reasoning remains relatively stable, analytical performance and response time are strongly affected under load conditions.
-
-Memory interference further amplifies cognitive strain, leading to reduced recall performance and slower retrieval. Risk-based decisions also show variability under cognitive load, suggesting that working memory limitations can influence decision consistency even in uncertain scenarios.
-
-Overall, the experiment provides a structured computational framework for analyzing how cognitive load impacts decision-making behavior across multiple cognitive domains.
+This project demonstrates that cognitive load significantly affects decision-making performance, particularly in analytical reasoning and memory-dependent tasks.
+While intuitive reasoning remains relatively stable, analytical reasoning and response time are strongly affected under working memory interference.
+Memory load reduces recall performance and increases retrieval time, confirming dual-task interference effects.
+Risk-based decisions also show variability, suggesting that cognitive load affects consistency in probabilistic reasoning.
+Overall, the experiment provides a structured computational framework for analyzing decision-making behavior under cognitive load.

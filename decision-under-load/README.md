@@ -1,35 +1,36 @@
 # Decision Making Under Cognitive Load
 
-## Objective
-To study how cognitive load influences reasoning accuracy, confidence, response time, and risk-based decision making.
+## Objective  
+To study how cognitive load affects decision-making performance in terms of accuracy, response time, confidence, and risk-based choices.
 
-## Variables Measured
-- Decision accuracy
-- Response time
-- Confidence levels
-- Memory recall accuracy
-- Risk preference patterns
+## Variables Measured  
+- Decision accuracy  
+- Response time  
+- Confidence levels  
+- Risk choice behavior  
+- Memory recall accuracy  
+- Memory recall time  
 
-## Methodology
-Participants completed intuitive, analytical, and risk-based decision tasks under both load and no-load conditions.
+## Methodology  
+Participants completed decision-making tasks under two conditions: with and without cognitive load.
+In the load condition, participants memorized a 4-digit sequence while solving intuitive, analytical, and risk-based questions.
+The order of tasks and conditions was randomized to reduce bias and learning effects.
 
-Load trials required participants to memorize and later recall digit sequences while simultaneously answering decision-based questions.
+## Technologies Used  
+- Python  
+- Pandas  
+- Matplotlib  
+- CSV data logging  
 
-The experiment compared how working memory interference affected analytical reasoning, intuitive responses, confidence, and risk selection behavior.
+## Observations  
+Cognitive load reduced analytical performance more than intuitive reasoning.
+Response time increased under load conditions due to higher processing demand.
+Risk choices varied under cognitive load, showing changes in decision patterns.
+Memory recall performance decreased under load conditions, confirming working memory interference.
 
-## Technologies Used
-- Python
-- CSV data logging
-- Randomized trial generation
-
-## Observations
-Cognitive load produced stronger effects on analytical reasoning accuracy and response time compared to intuitive tasks.
-
-Risk preferences also showed variability between load and no-load conditions, suggesting that working memory demand may influence decision strategies.
-
-## Future Scope
-Future versions could incorporate:
-- larger participant groups
-- adaptive memory loads
-- statistical significance testing
-- physiological measures such as stress or attention tracking
+## Future Scope  
+- Larger participant groups  
+- Statistical significance testing  
+- Adaptive cognitive load variation  
+- Physiological measurement integration  
+- More complex decision tasks  
