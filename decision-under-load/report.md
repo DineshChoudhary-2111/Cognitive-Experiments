@@ -1,199 +1,213 @@
 # Decision Making Under Cognitive Load
 
 ## Objective
+The objective of this experiment was to investigate how cognitive load influences human decision-making, analytical reasoning, intuitive judgment, confidence levels, and risk preference.
 
-This experiment was designed to study how cognitive load influences human decision-making, reasoning accuracy, confidence, and response behaviour.
-
-The project specifically investigated whether holding information in working memory affects:
-- intuitive reasoning,
-- analytical reasoning,
-- risk-based choices,
-- response speed,
-- and self-confidence during decision making.
+The experiment aimed to simulate situations where the brain must process information while simultaneously maintaining short-term memory, similar to real-world multitasking conditions.
 
 ---
 
-## Background
+## Research Question
+How does the presence of cognitive load affect:
+- analytical reasoning accuracy,
+- intuitive decision performance,
+- confidence levels,
+- response time,
+- and risk-taking behavior?
 
-Human cognition relies heavily on limited working memory resources.  
-When the brain is occupied with retaining information, decision quality and reasoning efficiency may change.
+---
 
-This experiment explores the relationship between:
-- memory load,
-- cognitive processing,
-- and behavioural decision outcomes.
-
-The project combines concepts from:
-- cognitive psychology,
-- behavioural economics,
-- and human-computer interaction.
+## Hypothesis
+It was hypothesized that:
+- analytical reasoning performance would decline under cognitive load,
+- response times would increase during cognitively demanding tasks,
+- intuitive decisions would remain comparatively stable,
+- and cognitive load could alter risk preference patterns.
 
 ---
 
 ## Experimental Design
 
-Participants completed three categories of decision tasks:
+### Participants
+Three participants completed the experiment across randomized trial conditions.
 
-### 1. Intuitive Reasoning
-Questions designed to trigger fast, instinctive responses.
+### Conditions
+Two primary conditions were tested:
 
-Example:
-> “You pass the person in 2nd place. What position are you now?”
+1. **No-Load Condition**
+   - Participants answered questions directly.
 
----
-
-### 2. Analytical Reasoning
-Questions requiring deliberate logical calculation.
-
-Example:
-> “20% of 150?”
+2. **Cognitive Load Condition**
+   - Participants first memorized a 4-digit sequence.
+   - The sequence had to be recalled after answering the question.
 
 ---
+
+## Types of Decision Tasks
+
+### 1. Intuitive Questions
+Fast, instinctive reasoning problems designed to trigger immediate responses.
+
+Examples:
+- Bat and ball problem
+- Relative ranking problems
+- Pattern-based logic questions
+
+### 2. Analytical Questions
+Calculation-based and logically structured problems requiring deliberate reasoning.
+
+Examples:
+- Arithmetic operations
+- Machine-time reasoning
+- Percentage calculations
 
 ### 3. Risk-Based Decisions
 Participants selected between:
-- a guaranteed reward (Option A),
-- or a probabilistic reward (Option B).
+- guaranteed rewards,
+- or probabilistic higher-value rewards.
 
-Example:
-> “A: 50 sure | B: 50% chance 120”
-
----
-
-## Cognitive Load Mechanism
-
-During LOAD trials:
-- participants first memorized a 4-digit sequence,
-- completed the reasoning task,
-- then recalled the sequence afterward.
-
-During NO LOAD trials:
-- participants solved questions directly without memory interference.
-
-This structure allowed comparison between:
-- normal reasoning,
-- and reasoning under working-memory pressure.
+This section examined changes in risk preference under cognitive load.
 
 ---
 
 ## Variables Measured
 
-The experiment recorded:
+### Independent Variable
+- Presence or absence of cognitive load.
 
+### Dependent Variables
 - Decision accuracy
 - Response time
-- Confidence rating (1–5)
-- Risk preference behaviour
+- Confidence level
 - Memory recall accuracy
-- Memory recall time
+- Risk preference distribution
 
 ---
 
 ## Technologies Used
-
 - Python
 - CSV data logging
-- Randomized trial sequencing
-- Automated behavioural analysis
+- Randomized trial generation
+- Matplotlib data visualization
 
 ---
 
-## Experimental Logic
+## Methodology
 
-Several mechanisms were intentionally designed to improve validity:
-
-- Trial order was randomized to reduce predictability.
-- Question categories were shuffled across sessions.
-- Load and no-load conditions were intermixed to reduce adaptation effects.
-- Confidence scoring was included to compare subjective certainty with actual performance.
-- Memory recall was measured independently to verify cognitive load effectiveness.
+1. Trials were randomized to reduce prediction effects.
+2. Participants completed:
+   - intuitive,
+   - analytical,
+   - and risk-based tasks.
+3. During load trials:
+   - participants memorized a digit sequence before solving the task.
+4. Confidence was self-reported on a scale from 1–5.
+5. Results were automatically stored in CSV format.
 
 ---
 
-## Results Summary
+## Data Visualization
 
-### Observed Trends
+### Analytical Accuracy Under Load
+![Analytical Accuracy](graphs/analytical_accuracy.png)
 
-The collected data showed several consistent behavioural patterns:
+### Intuitive Accuracy Comparison
+![Intuitive Accuracy](graphs/intuitive_accuracy.png)
 
-- Analytical reasoning performance generally declined under memory load.
-- Response times increased during cognitively demanding tasks.
-- Intuitive questions were less affected by load compared to analytical questions.
-- Participants often maintained high confidence even when analytical accuracy decreased.
-- Risk preferences shifted inconsistently between participants, suggesting individual behavioural variation.
-- Memory recall accuracy strongly influenced overall task performance.
+### Confidence Levels Across Conditions
+![Confidence Levels](graphs/confidence_levels.png)
+
+### Memory Recall Accuracy
+![Memory Recall](graphs/memory_accuracy.png)
+
+### Risk Preference Distribution
+![Risk Preference](graphs/risk_choices.png)
+
+### Response Time Comparison
+![Response Time](graphs/response_time.png)
+
+---
+
+## Key Observations
+
+### 1. Analytical Reasoning Was Most Affected
+Analytical task accuracy consistently declined under cognitive load for multiple participants.
+
+This suggests that:
+- working memory interference negatively impacts deliberate reasoning processes.
+
+---
+
+### 2. Intuitive Decisions Were More Stable
+Intuitive questions showed comparatively smaller performance changes.
+
+This may indicate that:
+- intuitive processing relies less heavily on active working memory resources.
+
+---
+
+### 3. Response Time Increased During Load Conditions
+Participants generally required more time to answer questions while simultaneously maintaining memory sequences.
+
+---
+
+### 4. Confidence Did Not Always Reflect Accuracy
+Several participants maintained high confidence levels despite reduced analytical performance under load.
+
+This demonstrates a separation between:
+- perceived certainty,
+- and actual cognitive performance.
+
+---
+
+### 5. Risk Preferences Shifted Across Conditions
+Some participants displayed different choices during cognitive load trials, suggesting that mental load may influence risk evaluation behavior.
 
 ---
 
 ## Cognitive Interpretation
 
-The findings support the idea that:
-- working memory resources are limited,
-- and analytical reasoning depends more heavily on those resources than intuitive reasoning.
+The experiment demonstrates several important psychological concepts:
 
-The experiment also demonstrates that:
-- confidence does not always correlate with correctness,
-- especially under increased cognitive pressure.
+- Working memory limitations
+- Cognitive resource competition
+- Dual-process reasoning systems
+- Confidence-performance dissociation
+- Decision instability under mental strain
 
-This aligns with established theories in:
-- dual-process cognition,
-- cognitive load theory,
-- and bounded rationality.
+The results align with theories suggesting that analytical reasoning requires greater cognitive resources than intuitive processing.
 
 ---
 
-## Graphical Analysis
-
-Graphs generated from the dataset include:
-
-- Accuracy comparison under LOAD vs NO LOAD
-- Response time analysis
-- Confidence level comparison
-- Memory performance graphs
-- Risk choice distribution graphs
-
-These visualizations help identify behavioural trends across participants and conditions.
-
----
-
-## Files Included
-
-### Main Program
-- `decision_memoryload.py`
-
-### Dataset
-- `decision_load_results.csv`
-
-### Graph Generation
-- `graphs.py`
-
-### Graph Outputs
-Stored inside:
-- `/graphs`
+## Limitations
+- Small participant sample size
+- Limited trial count
+- Human variability in confidence reporting
+- Simplified laboratory-style task environment
 
 ---
 
 ## Future Improvements
-
-Possible extensions of this project include:
-
-- larger participant samples,
-- adaptive cognitive load difficulty,
+Future versions could include:
+- larger participant groups,
+- adaptive difficulty scaling,
 - statistical significance testing,
-- eye-tracking integration,
-- physiological stress monitoring,
-- and machine learning analysis of behavioural patterns.
+- physiological stress measurements,
+- and graphical user interfaces.
+
+Potential expansion into:
+- educational psychology,
+- cognitive neuroscience,
+- and human-computer interaction research is also possible.
 
 ---
 
 ## Conclusion
+This experiment successfully demonstrated measurable effects of cognitive load on decision-making behavior.
 
-This experiment demonstrates how cognitive load can influence:
-- reasoning accuracy,
-- response behaviour,
-- confidence,
-- and decision strategies.
+The findings suggest that:
+- analytical reasoning becomes less reliable under working memory pressure,
+- response times increase,
+- and confidence does not always accurately reflect performance quality.
 
-The project highlights the relationship between memory pressure and higher-order thinking, while also showing measurable differences between intuitive and analytical cognition.
-
-The results reinforce the idea that human decision making is not purely logical, but strongly shaped by cognitive limitations and mental workload.
+The project highlights how computational experimentation can be used to model and study human cognitive behavior using programmable psychological testing systems.
